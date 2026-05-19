@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run:*)",
+      "Bash(supabase --version)",
+      "Bash(npx supabase:*)",
+      "Bash(npm install:*)",
+      "Bash(npx tsc:*)",
+      "Bash(find /c/Users/Germano/Documents/PROGRAMACAO/proposal-machine-pro/src -type f \\\\\\(-name *.tsx -o -name *.ts -o -name *.css -o -name *.scss \\\\\\))",
+      "Bash(npx vite:*)",
+      "Bash(for f:*)",
+      "Bash(do echo:*)",
+      "Read(//c/Users/Germano/Documents/PROGRAMACAO/proposal-machine-pro/**)",
+      "Bash(done)",
+      "Bash(ls:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git pull:*)",
+      "Bash(git stash:*)",
+      "Bash(grep -h \"client_company_id\\\\|valor_total\\\\|observacoes\\\\|ALTER TABLE.*proposals\\\\|ADD COLUMN\" supabase/migrations/*.sql)",
+      "Bash(grep -rn \"client_company_id\\\\|valor_total\" supabase/migrations/*.sql)",
+      "Bash(grep -rn \"ALTER TABLE.*proposals\\\\|ADD COLUMN\\\\|client_company_id\\\\|valor_total\\\\|observacoes\" supabase/migrations/*.sql)",
+      "Bash(grep -rn \"client_company_id\\\\|client_companies\\\\|portal_token\" supabase/migrations/*.sql)",
+      "Bash(xargs grep:*)",
+      "Bash(grep -r \"export.*Tab\\\\|export.*Material\" /c/Users/Germano/Documents/PROGRAMACAO/proposal-machine-pro/src --include=*.tsx --include=*.ts)",
+      "Bash(git revert:*)"
+    ]
+  }
+}

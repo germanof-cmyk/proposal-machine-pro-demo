@@ -1,0 +1,2 @@
+ALTER TABLE public.orcamentos
+  ADD COLUMN IF NOT EXISTS prazo_pagamento INTEGER NOT NULL DEFAULT 30;
