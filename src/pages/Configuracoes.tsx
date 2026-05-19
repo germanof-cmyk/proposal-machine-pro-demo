@@ -536,7 +536,7 @@ export default function Configuracoes() {
               <div className="space-y-1">
                 <Label className="text-xs">Nome fantasia</Label>
                 <Input
-                  placeholder="Ex: 3D Usinagem"
+                  placeholder="Ex: Frotaly"
                   value={formEmpresaConfig.nome}
                   onChange={(e) => setFormEmpresaConfig((f) => ({ ...f, nome: e.target.value }))}
                   className="h-8 text-sm"
@@ -545,7 +545,7 @@ export default function Configuracoes() {
               <div className="space-y-1">
                 <Label className="text-xs">Razão social</Label>
                 <Input
-                  placeholder="Ex: 3D Usinagem e Soluções Industriais"
+                  placeholder="Ex: Frotaly"
                   value={formEmpresaConfig.razao_social}
                   onChange={(e) => setFormEmpresaConfig((f) => ({ ...f, razao_social: e.target.value }))}
                   className="h-8 text-sm"

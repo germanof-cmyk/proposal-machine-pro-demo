@@ -1,5 +1,5 @@
 import { Proposal } from "@/types/proposal";
-import logo from "@/assets/logo-3d-usinagem.png";
+import logo from "@/assets/logo-frotaly.png";
 
 interface Props {
   proposal: Proposal;
@@ -23,13 +23,13 @@ const ProposalPreview = ({ proposal }: Props) => {
     <div className="print-area bg-card p-8 max-w-[210mm] mx-auto text-sm text-card-foreground" style={{ fontFamily: "'Inter', sans-serif" }}>
       {/* Header */}
       <div className="border-2 border-foreground p-4 flex gap-6 items-center mb-1">
-        <img src={logo} alt="3D Usinagem" className="w-36 h-auto" />
+        <img src={logo} alt="Frotaly" className="w-36 h-auto" />
         <div className="text-right flex-1">
-          <h1 className="text-xl font-extrabold tracking-tight">3D USINAGEM E SOLUÇÕES INDUSTRIAIS</h1>
+          <h1 className="text-xl font-extrabold tracking-tight">FROTALY</h1>
           <p className="font-semibold text-xs">CNPJ: 13.570.620/0001-08</p>
           <p className="text-xs text-muted-foreground">Servidão Horst Schulze nº68</p>
           <p className="text-xs text-muted-foreground">Bairro Jardim Sofia - JOINVILLE/SC</p>
-          <p className="text-xs text-muted-foreground mt-1">contato@3dusinagem.com.br</p>
+          <p className="text-xs text-muted-foreground mt-1">contato@frotaly.com.br</p>
           <p className="text-xs text-muted-foreground">whatsapp (47) 99616-1212</p>
         </div>
       </div>

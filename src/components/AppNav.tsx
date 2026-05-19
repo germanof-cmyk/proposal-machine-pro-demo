@@ -2,6 +2,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
 import { useEmpresa } from "@/hooks/useEmpresa";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo-frotaly.png";
 
 const NAV_LINKS = [
   { to: "/app", label: "Propostas" },
@@ -27,9 +28,7 @@ export function AppNav() {
     >
       {/* Logo */}
       <div className="flex items-center gap-2.5 shrink-0">
-        <div className="w-7 h-7 bg-[#1a1a1a] rounded flex items-center justify-center">
-          <span className="text-white text-[10px] font-bold tracking-tight">3D</span>
-        </div>
+        <img src={logo} alt="Frotaly" style={{ height: 32, width: "auto" }} />
         <span className="text-sm font-semibold tracking-tight">{empresa.nome}</span>
       </div>
 

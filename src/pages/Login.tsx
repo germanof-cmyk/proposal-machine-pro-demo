@@ -66,7 +66,7 @@ export default function Login() {
         <div className="mb-8 text-center">
           <h1 className="text-2xl font-bold tracking-tight">Portal Comercial</h1>
           <p className="text-sm text-muted-foreground mt-1">
-            3D Usinagem e Soluções Industriais
+            Frotaly
           </p>
         </div>
         <form onSubmit={handleSubmit} className="space-y-4">

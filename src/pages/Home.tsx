@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { AlignJustify, FileText, User, ArrowRight, X } from "lucide-react";
+import logo from "@/assets/logo-frotaly.png";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -53,19 +54,9 @@ export default function Home() {
       {/* Header */}
       <div className="text-center mb-10">
         <div className="flex items-center justify-center gap-3 mb-4">
-          <div
-            className="flex items-center justify-center shrink-0"
-            style={{
-              width: 40, height: 40, background: "#111",
-              borderRadius: 10,
-            }}
-          >
-            <span style={{ color: "#fff", fontSize: 12, fontWeight: 700, letterSpacing: "-0.5px" }}>
-              3D
-            </span>
-          </div>
+          <img src={logo} alt="Frotaly" style={{ height: 40, width: "auto" }} />
           <span style={{ fontSize: 22, fontWeight: 700, letterSpacing: "-0.3px" }}>
-            3D Usinagem
+            Frotaly
           </span>
         </div>
         <p style={{ fontSize: 15, color: "#888", margin: 0 }}>
@@ -112,7 +103,7 @@ export default function Home() {
             <h2 className="text-[16px] font-semibold mb-2">Portal do Cliente Final</h2>
             <p className="text-[13px] text-muted-foreground leading-relaxed mb-5">
               O acesso ao Portal do Cliente Final é feito via link exclusivo enviado
-              pela 3D Usinagem. Entre em contato para solicitar o seu link.
+              pela Frotaly. Entre em contato para solicitar o seu link.
             </p>
             <button
               onClick={() => setModalOpen(false)}

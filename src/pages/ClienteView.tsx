@@ -2,7 +2,7 @@ import { useState, useEffect, useMemo } from "react";
 import { useParams } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
 import { useEmpresa } from "@/hooks/useEmpresa";
-import logo from "@/assets/logo-3d-usinagem.png";
+import logo from "@/assets/logo-frotaly.png";
 import {
   AlertTriangle, Check, CheckCircle2, ChevronDown, ChevronUp,
   Clock, Download, FileText, Loader2, PackageCheck,

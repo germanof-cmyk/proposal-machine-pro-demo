@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
 import { useEmpresa } from "@/hooks/useEmpresa";
 import { dispararAlerta } from "@/lib/alertas";
+import logo from "@/assets/logo-frotaly.png";
 import {
   AlertTriangle, Check, CheckCircle2, ChevronDown, ChevronUp,
   Download, FileText, Loader2, Printer, X,
@@ -172,9 +173,7 @@ type KpiFilter = "producao" | "critico" | "concluidos" | null;
 function PortalNav({ userEmail, onSignOut, nomeEmpresa }: { userEmail: string; onSignOut: () => void; nomeEmpresa: string }) {
   return (
     <nav className="h-[52px] px-6 flex items-center gap-3 shrink-0" style={{ background: "#0f0f0f" }}>
-      <div className="w-7 h-7 bg-white rounded flex items-center justify-center shrink-0">
-        <span className="text-black text-[10px] font-bold tracking-tight">3D</span>
-      </div>
+      <img src={logo} alt="Frotaly" style={{ height: 32, width: "auto" }} />
       <span className="text-white text-sm font-semibold tracking-tight">{nomeEmpresa}</span>
       <span className="text-[10px] font-medium px-2 py-0.5 rounded" style={{ background: "#1f1f1f", color: "#a0a0a0", border: "0.5px solid #333" }}>
         Portal de Fabricação
@@ -754,7 +753,7 @@ export default function PortalDashboard() {
     const conteudo = `
       <div class="print-header">
         <div class="ph-left">
-          <div class="ph-logo">3D</div>
+          <img src="${logo}" alt="Frotaly" style="height:44px;width:auto;" />
           <div>
             <div class="ph-brand">${empresa.nome}</div>
             <div class="ph-sub">Portal de Fabricação · Lista Completa</div>
@@ -924,9 +923,7 @@ export default function PortalDashboard() {
       .print-header { display: flex; align-items: center; justify-content: space-between;
         padding-bottom: 20px; border-bottom: 2px solid #111; margin-bottom: 28px; }
       .ph-left { display: flex; align-items: center; gap: 14px; }
-      .ph-logo { width: 44px; height: 44px; background: #111; border-radius: 8px;
-        display: flex; align-items: center; justify-content: center;
-        color: #fff; font-size: 13px; font-weight: 700; }
+      .ph-logo { height: 44px; width: auto; }
       .ph-brand { font-size: 18px; font-weight: 700; }
       .ph-sub { font-size: 11px; color: #888; margin-top: 2px; }
       .ph-right { text-align: right; }

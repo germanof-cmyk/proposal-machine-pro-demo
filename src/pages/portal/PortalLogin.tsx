@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Loader2 } from "lucide-react";
 import { toast } from "sonner";
+import logo from "@/assets/logo-frotaly.png";
 
 export default function PortalLogin() {
   const navigate = useNavigate();
@@ -54,9 +55,7 @@ export default function PortalLogin() {
         className="h-[52px] px-6 flex items-center gap-3"
         style={{ background: "#0f0f0f" }}
       >
-        <div className="w-7 h-7 bg-white rounded flex items-center justify-center">
-          <span className="text-black text-[10px] font-bold tracking-tight">3D</span>
-        </div>
+        <img src={logo} alt="Frotaly" style={{ height: 32, width: "auto" }} />
         <span className="text-white text-sm font-semibold tracking-tight">
           {empresa.nome}
         </span>
